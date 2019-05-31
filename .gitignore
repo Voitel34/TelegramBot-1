@@ -1,0 +1,6 @@
+# save file with TOKEN and string resourses
+constants.py
+INDIGO.txt
+.idea/
+venv/
+__pycache__/
