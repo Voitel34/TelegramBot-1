@@ -20,7 +20,7 @@ def handle_text(message):
 
 @bot.message_handler(commands=['supermessage'])     # обработчик команды (/supermessage)
 def handle_text(message):
-    if message.chat.id == '9999999':    # проверка id администратора
+    if str(message.chat.id) == '9999999':    # проверка id администратора
         row_number = 2      # стартовая строка таблицы
         while sheet_id['B' + str(row_number)].value is not None:    # проход по всем существующим id
             bot.send_message(sheet_id['B' + str(row_number)].value, constants.text_for_notifications)
